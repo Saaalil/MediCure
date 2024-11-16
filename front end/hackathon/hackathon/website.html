@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <link
+      rel="stylesheet"
+      href="hackathontask.css"
+    />
+    
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        
+        <div class="lower-out">
+          <div class="lower-nav">
+            <div class="site-name">
+              <h1>MediCure</h1>
+          </div>
+            <div class="nav-links">
+              <ul>
+                <li>Diagnostic Tools</li>
+                <li>Symptoms</li>
+                <li>Conditons</li>
+                <li>Health And Wellness</li>
+              
+              </ul>
+            </div>
+            <div class="nav-button">
+              <button><b>Online Consultation</b></button>
+              <button><b> Medical Facilities Near Me</b></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pg1">
+        <div class="pg1-inner">
+            <div class="pg1-content">
+                <span class="tilted">Hello</span>
+                <h1>WE KNOW <br />HOW TO TALK... <br />ABOUT YOUR HEALTH</h1>
+                <p>
+                    "<b>DocTok</b>" provides accurate, reliable, and easy-to-understand health information, helping you navigate your symptoms and make informed decisions about your well-being."
+                </p>
+                <button id="lets-talk-btn">Let's Talk</button> <!-- Button to open the chatbot -->
+            </div>
+            <div class="img-outer">
+                <div class="img-box">
+                    <img src="chatbot.webp" alt="Chatbot Image"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating Chatbot Container -->
+    <div id="chat-container" style="display:none;">
+        <div id="chat-header">
+            <button id="close-chat">X</button>
+            <h3>Chat with DocTok</h3>
+        </div>
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type your message here">
+        <button id="send-button">Send</button>
+    </div>
+    
+      <div class="pg2">
+        <div class="pg2-inner">
+          <div class="pg2-content">
+            <span class="tilted">Services</span>
+            <h1>Servies We Offer</h1>
+            <div class="card-container">
+              <div class="pg2-cards hoverme">
+                <div class="inner-card">
+                  <h1>01</h1>
+                  <h2>Use our A.I. to figure out what to do</h2>
+                  <div class="pg2_card_img"><img src="f0a01072d758c6e01ca7f7737c237fe250bfd06a-900x750.avif" alt="" class="p2c2-img c1img"></div>
+                  <p>
+                    Your situation is specific to you. Our A.I. asks questions and helps narrow down what is going on based on your answers. No more guessing and filling in the blanks. It's like talking to your friend who happens to be a doctor.
+                  </p>
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <div class="pg2-cards hoverme">
+                <div class="inner-card">
+                  <h1>02</h1>
+                  <h2>Read our content written by clinicians</h2>
+                  <div class="pg2_card_img"><img src="pg2-c2img.avif" alt="" class="p2c2-img"></div>
+                  <p>
+                    Wouldn't that be great if the content you read was actually scientifically vetted by real experts? Look no further.
+                  </p>
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <div class="pg2-cards hoverme">
+                <div class="inner-card">
+                  <h1>03</h1>
+                  <h2>Check out our reviews and Top 10 lists</h2>
+                  <div class="pg2_card_img"><img src="pg2-c3img.avif" alt="" class="p2c2-img c3img"></div>
+                  <p>
+                    Now that we've helped you narrow things down with both A.I. and medical experts, find the right product/service/doctor for you with the help of our team of reviewers.
+                  </p>
+                  <div class="circle"></div>
+                </div>
+              </div>
+              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pg4">
+        <div class="pg4-inner">
+          <div class="pg4-content">
+            <span class="tilted">Articles</span>
+            
+                  <h1>Top Articles</h1>
+                  <div class="pg4card-container">
+                    <!-- Card 1: Cause of Rashes -->
+                    <div class="pg4-cards" onclick="this.classList.toggle('flipped')">
+                      <div class="pg4-card-front">
+                        <div class="pg4inner-card">
+                          <img src="rashes.avif" alt="" />
+                        </div>
+                        <div class="pg4ic">
+                          <div class="pg4innercard-content">
+                            <h1>Cause Of Rashes</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pg4-card-back">
+                        <p>Rashes can occur due to various causes, such as allergic reactions, infections, or skin conditions like eczema. Some rashes are temporary, while others may signal a more serious underlying issue. Common types include hives, contact dermatitis, and fungal infections. If a rash is persistent or accompanied by other symptoms like fever, it’s important to seek medical advice. Understanding the cause of a rash helps in determining the right treatment, whether it’s topical creams, medications, or lifestyle changes.</p>
+                      </div>
+                    </div>
+                  
+                    <!-- Card 2: Common Cold -->
+                    <div class="pg4-cards" onclick="this.classList.toggle('flipped')">
+                      <div class="pg4-card-front">
+                        <div class="pg4inner-card">
+                          <img src="cold.jpeg" alt="" />
+                        </div>
+                        <div class="pg4ic">
+                          <div class="pg4innercard-content">
+                            <h1>Common Cold</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pg4-card-back">
+                        <p>The common cold is one of the most frequent illnesses caused by viruses, especially rhinoviruses. Symptoms include a runny nose, sore throat, sneezing, and mild cough. Although it's not usually severe, it can still cause discomfort and affect daily activities. The cold spreads easily through droplets from sneezing or coughing. Rest, fluids, and over-the-counter medications can help relieve symptoms. It’s essential to avoid spreading the virus by practicing good hygiene and staying home when feeling sick.</p>
+                      </div>
+                    </div>
+                  
+                    <!-- Card 3: Headache Relief -->
+                    <div class="pg4-cards" onclick="this.classList.toggle('flipped')">
+                      <div class="pg4-card-front">
+                        <div class="pg4inner-card">
+                          <img src="headache.avif" alt="" />
+                        </div>
+                        <div class="pg4ic">
+                          <div class="pg4innercard-content">
+                            <h1>Headache Relief - 23 Ways to Stop a Headache</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pg4-card-back">
+                        <p>Headaches are a common issue that can be triggered by stress, dehydration, lack of sleep, or underlying medical conditions. Relief strategies range from natural remedies like drinking water or applying a cold compress to over-the-counter pain relief medications. Reducing stress through mindfulness, regular exercise, and improving posture can also help manage and prevent headaches. In more severe cases, medical treatments like prescription medications or specialized therapies may be required.</p>
+                      </div>
+                    </div>
+                  
+                    <!-- Card 4: Painful Urination -->
+                    <div class="pg4-cards" onclick="this.classList.toggle('flipped')">
+                      <div class="pg4-card-front">
+                        <div class="pg4inner-card">
+                          <img src="pain urin.avif" alt="" />
+                        </div>
+                        <div class="pg4ic">
+                          <div class="pg4innercard-content">
+                            <h1>Painful Urination: Symptoms, Causes & Treatments</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pg4-card-back">
+                        <p>Painful urination, or dysuria, can be a sign of various conditions such as urinary tract infections (UTIs), kidney stones, or sexually transmitted diseases (STDs). It may also result from dehydration or bladder irritants. Associated symptoms might include frequent urination, cloudy or bloody urine, or a strong urge to urinate. Treatment depends on the cause, ranging from antibiotics for infections to lifestyle changes. Seeking medical attention is crucial for proper diagnosis and treatment..</p>
+                      </div>
+                    </div>
+                  
+                    <!-- Card 5: STD Symptoms -->
+                    <div class="pg4-cards" onclick="this.classList.toggle('flipped')">
+                      <div class="pg4-card-front">
+                        <div class="pg4inner-card">
+                          <img src="stdimg.avif" alt="" />
+                        </div>
+                        <div class="pg4ic">
+                          <div class="pg4innercard-content">
+                            <h1>STD Or Not? 23 Reasons For STD Symptoms In Women</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pg4-card-back">
+                        <p>STDs can cause a variety of symptoms in women, including unusual discharge, painful urination, and pelvic pain. However, many non-STD conditions like urinary tract infections, yeast infections, and hormonal changes can cause similar symptoms. It's essential for women experiencing these signs to get tested, as some STDs can remain asymptomatic for a long time. Early detection and treatment are vital to preventing complications and transmission.</p>
+                      </div>
+                    </div>
+                  
+                    <!-- Card 6: Lower Left Abdomen Pain -->
+                    <div class="pg4-cards" onclick="this.classList.toggle('flipped')">
+                      <div class="pg4-card-front">
+                        <div class="pg4inner-card">
+                          <img src="left abd.avif" alt="" />
+                        </div>
+                        <div class="pg4ic">
+                          <div class="pg4innercard-content">
+                            <h1>Pain in Your Lower Left Abdomen</h1>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pg4-card-back">
+                        <p>Pain in the lower left abdomen can be caused by several factors, ranging from digestive issues like constipation or gas to more serious conditions such as diverticulitis or ovarian cysts. It may also indicate problems with the kidneys, intestines, or reproductive organs. If the pain is sharp, persistent, or accompanied by fever or nausea, immediate medical consultation is advised. Proper diagnosis through physical exams and imaging tests is crucial for effective treatment.
+                         </p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+        </div>
+      </div>
+                  
+      <div class="pg5">
+        <div class="pg5-inner">
+          <div class="pg5-content">
+            <span class="tilted">Testimonial</span>
+            <h1>Client's Kind Word</h1>
+            <div class="pg5card-container">
+              <div class="pg5-cards hoverme">
+                <img src="pg5-img.jpg" alt="" />
+                <p>
+                  "The medical chatbot provided fast, accurate responses and made it easy for us to understand symptoms. It’s an invaluable tool for anyone looking for quick, reliable health information."
+                </p>
+                <h4>Aaditya Arora</h4>
+                <span>CEO at pxdraft</span>
+              </div>
+              <div class="pg5-cards hoverme">
+                <img src="pg5-img2.jpg" alt="" />
+                <p>
+                  "We found the chatbot incredibly helpful for quick symptom checks. Its user-friendly interface and clear guidance allowed us to gain valuable insights without the wait."
+                </p>
+                <h4>Rhythm Taneja</h4>
+                <span>CEO at pxdraft</span>
+              </div>
+              <div class="pg5-cards hoverme">
+                <img src="pg5-img3.jpg" alt="" />
+                <p>
+                  "Our team loves using the chatbot. It’s fast, easy to navigate, and provides helpful symptom-based recommendations. A must-have tool for health-related queries!"
+                </p>
+                <h4>Salil Hiremath</h4>
+                <span>CEO at pxdraft</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get the elements
+      const sendButton = document.getElementById('send-button');
+      const userInput = document.getElementById('user-input');
+      const chatBox = document.getElementById('chat-box');
+      const letsTalkButton = document.getElementById('lets-talk-btn');
+      const chatContainer = document.getElementById('chat-container');
+      const closeButton = document.getElementById('close-chat');
+  
+      // When the user clicks "Let's Talk", show the chat container
+      letsTalkButton.addEventListener('click', () => {
+          chatContainer.style.display = 'block';  // Show chat container
+          chatContainer.style.position = 'fixed'; // Make it float
+          chatContainer.style.right = '10px';     // Position it on the right
+          chatContainer.style.bottom = '10px';    // Position it at the bottom
+          chatContainer.style.zIndex = '1000';    // Ensure it's on top
+      });
+
+      // Function to add typing indicator
+      function addTypingIndicator() {
+        const typingDiv = document.createElement('div');
+        typingDiv.classList.add('message', 'bot');
+        typingDiv.id = 'typing-indicator';
+        typingDiv.innerHTML = `
+            <div class="typing-indicator">
+                <span></span><span></span><span></span>
+            </div>
+        `;
+        chatBox.appendChild(typingDiv);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    // Function to remove typing indicator
+    function removeTypingIndicator() {
+        const typingDiv = document.getElementById('typing-indicator');
+        if (typingDiv) {
+            typingDiv.remove();
+        }
+    }
+
+    // Function to send a message to the chatbot
+   
+      // Handle sending the user message to Flask API
+      sendButton.addEventListener('click', async () => {
+        const prompt = userInput.value.trim();
+        if (!prompt) return alert('Please enter a message.');
+    
+        // Display user message
+        const userMessage = document.createElement('div');
+        userMessage.classList.add('user-message');
+        userMessage.textContent = prompt;
+        chatBox.appendChild(userMessage);
+        chatBox.scrollTop = chatBox.scrollHeight;
+    
+        // Clear input
+        userInput.value = '';
+    
+        // Show typing indicator
+        addTypingIndicator();
+    
+        try {
+            // Send prompt to API
+            const response = await fetch('http://localhost:5511/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ prompt }),
+            });
+    
+            if (!response.ok) throw new Error(`Error ${response.status}: ${response.statusText}`);
+    
+            const data = await response.json();
+    
+            // Remove typing indicator
+            removeTypingIndicator();
+    
+            // Display chatbot response
+            const botMessage = document.createElement('div');
+            botMessage.classList.add('bot-message');
+            botMessage.textContent = data.response || 'Error: No response';
+            chatBox.appendChild(botMessage);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        } catch (error) {
+            removeTypingIndicator();
+            const errorMessage = document.createElement('div');
+            errorMessage.classList.add('bot-message');
+            errorMessage.textContent = `Error: ${error.message}`;
+            chatBox.appendChild(errorMessage);
+        }
+      });
+      // Step 1: Handle the "Medical Facilities Near Me" Button
+document.querySelector('.nav-button button:nth-child(2)').addEventListener('click', function() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            const userLat = position.coords.latitude;  // Latitude
+            const userLng = position.coords.longitude; // Longitude
+            findNearbyHospitals(userLat, userLng);     // Call function to find hospitals
+        }, function(error) {
+            alert('Unable to retrieve your location. Please try again later.');
+        });
+    } else {
+        alert('Geolocation is not supported by this browser.');
+    }
+});
+
+// Step 1: Handle the "Medical Facilities Near Me" Button
+document.querySelector('.nav-button button:nth-child(2)').addEventListener('click', function() {
+  if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+          const userLat = position.coords.latitude;  // Latitude
+          const userLng = position.coords.longitude; // Longitude
+          
+          // Create a Google Maps search URL for hospitals near the user's location
+          const googleMapsUrl = `https://www.google.com/maps/search/?q=hospitals+near+${userLat},${userLng}`;
+          
+          // Show an alert with the generated Google Maps URL
+          alert(`Click the link to find the nearest hospitals:\n${googleMapsUrl}`);
+          
+          // Optionally, you can open the URL directly in a new tab:
+          window.open(googleMapsUrl, '_blank');
+      }, function(error) {
+          alert('Unable to retrieve your location. Please try again later.');
+      });
+  } else {
+      alert('Geolocation is not supported by this browser.');
+  }
+});
+
+// Step 3: Handle the "Online Consultation" Button
+document.querySelector('.nav-button button:nth-child(1)').addEventListener('click', function() {
+    // Open Practo (or other online consultation platform)
+    window.open('https://www.practo.com/', '_blank'); // Redirect to Practo for consultation
+});
+
+  </script>
+  
+  
+  
+  </body>
+  
+</html>  
